@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreetAI</title>
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+
+
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+
+  <!-- w3.css -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <!-- link favicon -->
+  <link rel="shortcut icon" href="img/fav/logo.png" type="image">
+
+
+
+  <!-- link tex animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <style>
+    /* It makes all img elements non-reactive to any mouse events such as dragging, hovering, clicking etc. */
+    .pointer-action {
+      pointer-events: none;
+      width: 95%;
+    }
+  </style>
+
+
+
+
+  <script src="js/main.js"></script>
+
+  <link rel="stylesheet" href="css/main.css">
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+  <!-- bootstrap headers -->
+
+  <header>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+
+
+      <a class="navbar-brand" href="#" onclick="location.reload();">Greet.AI</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <!-- home -->
+          <li class="nav-item active">
+            <a class="nav-link" href="http://greetai.epizy.com/">Home <span class="sr-only"></span></a>
+          </li>
+
+          <!-- dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Cards
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#bdaycards">Birthday Cards</a>
+              <a class="dropdown-item" href="#" type="button">Diwali Cards</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Christmas Cards (Upcoming)</a>
+            </div>
+          </li>
+
+          <!-- temamates -->
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Teammates</a>
+          </li>
+
+          <!-- feedback form -->
+          <li class="nav-item">
+            <a type="button" class="nav-link" data-toggle="modal" data-target="#exampleModal">
+              Feedback
+            </a>
+          </li>
+
+          <!-- tutorial video -->
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#introvideo">How to use ?</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+
+
+    <!-- Background image -->
+    <div class="p-5 text-center bg-image" style="
+            background-image: url('img/bgheader.jpg');
+            height: 400px; opacity: 0.9;
+          ">
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-white">
+            <h1 class="mb-3 animate__animated animate__bounceIn">Greet.AI</h1>
+            <h4 class="mb-3 animate__animated animate__bounceIn">An Easy and Appealing way to wish your loved one's</h4>
+            <a class="btn btn-outline-light btn-lg " href="#" role="button" data-toggle="modal"
+              data-target="#introvideo">Take a tour</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Background image -->
+  </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Page content -->
+  <div class="w3-content w3-padding" style="max-width:1564px">
+
+
+    <!-- Project Section -->
+    <div class="w3-container w3-padding-2" id="bdaycards">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="margin-top: 0;">Birthday Cards</h3>
+    </div>
+
+
+    <div class="w3-row-padding">
+
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <!-- <div class="w3-display-topleft w3-black w3-padding" >Template 1</div> -->
+          <img src="img/bday/card1.jpg" alt="card1" style="width:100%" data-toggle="modal" data-target="#cardmodal"
+            onclick="bdaycard1();">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <!-- <div class="w3-display-topleft w3-black w3-padding">Template 2</div> -->
+          <img src="img/bday/card2.jpg" alt="card2" style="width:100%" data-toggle="modal" data-target="#cardmodal"
+            onclick="bdaycard2();"></a>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <!-- <div class="w3-display-topleft w3-black w3-padding">Template 3</div> -->
+          <img src="img/bday/card3.jpg" alt="card3" style="width:100%" data-toggle="modal" data-target="#cardmodal"
+            onclick="bdaycard3();">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <!-- <div class="w3-display-topleft w3-black w3-padding">Template 4</div> -->
+          <img src="img/bday/card4.jpg" alt="card4" style="width:100%" data-toggle="modal" data-target="#cardmodal"
+            onclick="bdaycard4();">
+        </div>
+      </div>
+
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <!-- <div class="w3-display-topleft w3-black w3-padding">Template 5</div> -->
+          <img src="img/bday/card5.jpg" alt="card5" style="width:100%" data-toggle="modal" data-target="#cardmodal"
+            onclick="bdaycard5();">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <!-- <div class="w3-display-topleft w3-black w3-padding">Template 6</div> -->
+          <img src="img/bday/card6.jpg" alt="card6" style="width:100%" data-toggle="modal" data-target="#cardmodal"
+            onclick="bdaycard6();">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <!-- <div class="w3-display-topleft w3-black w3-padding">Template 7</div> -->
+          <img src="img/bday/card7.jpg" alt="card7" style="width:100%" data-toggle="modal" data-target="#cardmodal"
+            onclick="bdaycard7();">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <!-- <div class="w3-display-topleft w3-black w3-padding">Template 8</div> -->
+          <img src="img/bday/card8.jpg" alt="card8" style="width:100%" data-toggle="modal" data-target="#cardmodal"
+            onclick="bdaycard8();">
+        </div>
+      </div>
+
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <!-- <div class="w3-display-topleft w3-black w3-padding">Template 9</div> -->
+          <img src="img/bday/card9.jpg" alt="card9" style="width:100%" data-toggle="modal" data-target="#cardmodal"
+            onclick="bdaycard9();">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <!-- <div class="w3-display-topleft w3-black w3-padding">Template 10</div> -->
+          <img src="img/bday/card10.jpg" alt="card10" style="width:100%" data-toggle="modal" data-target="#cardmodal"
+            onclick="bdaycard10();">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <!-- <div class="w3-display-topleft w3-black w3-padding">Template 11</div> -->
+          <img src="img/bday/card11.jpg" alt="card11" style="width:100%" data-toggle="modal" data-target="#cardmodal"
+            onclick="bdaycard11();">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <!-- <div class="w3-display-topleft w3-black w3-padding">Template 12</div> -->
+          <img src="img/bday/card12.jpg" alt="card12" style="width:100%" data-toggle="modal" data-target="#cardmodal"
+            onclick="bdaycard12();">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <!-- <div class="w3-display-topleft w3-black w3-padding">Template 13</div> -->
+          <img src="img/bday/card13.jpg" alt="card13" style="width:100%" data-toggle="modal" data-target="#cardmodal"
+            onclick="bdaycard13();">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <!-- <div class="w3-display-topleft w3-black w3-padding">Template 14</div> -->
+          <img src="img/bday/card14.jpg" alt="card14" style="width:100%" data-toggle="modal" data-target="#cardmodal"
+            onclick="bdaycard14();">
+        </div>
+      </div>
+
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <!-- <div class="w3-display-topleft w3-black w3-padding">Template 15</div> -->
+          <img src="img/bday/card15.jpg" alt="card15" style="width:100%" data-toggle="modal" data-target="#cardmodal"
+            onclick="bdaycard15();">
+        </div>
+      </div>
+
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <!-- <div class="w3-display-topleft w3-black w3-padding">Template 16</div> -->
+          <img src="img/bday/card16.jpg" alt="card16" style="width:100%" data-toggle="modal" data-target="#cardmodal"
+            onclick="bdaycard16();">
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- About Section -->
+    <div class="w3-container w3-padding-32" id="about">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About Us !</h3>
+
+      <h3 style="text-align: center;">Welcome To <span id="W_Name1">GreetAi</span></h3>
+      <p><span id="W_Name2">GreetAi</span> is a Professional <span id="W_Type1">designing, template
+          generator</span> Platform. Here we will provide you only interesting content, which you will like
+        very much. We're dedicated to providing you the best of <span id="W_Type2">designing, template
+          generator</span>, with a focus on dependability and <span id="W_Spec">template generator</span>.
+        We're working to turn our passion for <span id="W_Type3">designing, template generator</span> into a
+        booming <a href="greetai.epizy.com" rel="do-follow" style="color:inherit; text-decoration: none;">online
+          website</a>. We hope you enjoy our <span id="W_Type4">designing, template generator</span> as much as we enjoy
+        offering them to you.</p>
+      <p>I will keep posting more important posts on my Website for all of you. Please give your support and love.
+      </p>
+      <p style="font-weight: bold; text-align: center;">Thanks For Visiting GreetAi<br><br>
+        <span style="color: blue; font-size: 16px; font-weight: bold; text-align: center;">Have a nice day
+          !</span>
+      </p>
+
+    </div>
+
+    <div class="w3-row-padding w3-grayscale" id="contact">
+      <div class="w3-col l3 m6 w3-margin-bottom ">
+        <img src="img/contact/utkarsh.jpeg" alt="Utkarsh Gupta" class="pointer-action">
+        <h3>Utkarsh Gupta</h3>
+        <p class="w3-opacity">Founder</p>
+        <p>U.G. Student<br>Creator of this Site</p>
+        <p><button class="contactbtn" onclick="location.href='https:/www.linkedin.com/in/utkarsh-gupta-9a49561a1/'">
+            <div class="svg-wrapper-1">
+              <div class="svg-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </div>
+            </div>
+            <span>LinkedIn</span>
+          </button>
+          <button class="contactbtn" onclick="groupmail();">
+            <div class="svg-wrapper-1">
+              <div class="svg-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path
+                    d="M22 5v14h-20v-14h20zm2-2h-24v18h24v-18zm-2 16l-6.526-6.618-3.445 3.483-3.418-3.525-6.611 6.66 5.051-8-5.051-6 10.029 7.446 9.971-7.446-4.998 6.01 4.998 7.99z" />
+                </svg>
+              </div>
+            </div>
+            <span>Mail</span>
+          </button>
+        </p>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom ">
+        <img src="img/contact/harshita.jpeg" alt="Harshita Gupta" class="pointer-action">
+        <h3>Harshita Gupta</h3>
+        <p class="w3-opacity">Designer</p>
+        <p>U.G. Student<br>Template Designer</p>
+        <p>
+          <button class="contactbtn"
+            onclick="location.href='https:/www.instagram.com/spotless_artsy/?utm_medium=copy_link'">
+            <div class="svg-wrapper-1">
+              <div class="svg-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+              </div>
+            </div>
+            <span class="disnone">Instagram</span>
+          </button>
+          <button class="contactbtn" onclick="groupmail();">
+            <div class="svg-wrapper-1">
+              <div class="svg-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path
+                    d="M22 5v14h-20v-14h20zm2-2h-24v18h24v-18zm-2 16l-6.526-6.618-3.445 3.483-3.418-3.525-6.611 6.66 5.051-8-5.051-6 10.029 7.446 9.971-7.446-4.998 6.01 4.998 7.99z" />
+                </svg>
+              </div>
+            </div>
+            <span>Mail</span>
+          </button>
+
+        </p>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom ">
+        <img src="img/contact/aviral.jpeg" alt="Aviral Gautam" class="pointer-action">
+        <h3>Aviral Gautam</h3>
+        <p class="w3-opacity">Developer</p>
+        <p>U.G. Student<br>&nbsp;</p>
+        <p><button class="contactbtn" onclick="location.href='https:/www.linkedin.com/in/aviral-gautam-6a31151b6/'
+                    ">
+            <div class="svg-wrapper-1">
+              <div class="svg-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </div>
+            </div>
+            <span class="disnone">LinkedIn</span>
+          </button>
+          <button class="contactbtn" onclick="groupmail();">
+            <div class="svg-wrapper-1">
+              <div class="svg-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path
+                    d="M22 5v14h-20v-14h20zm2-2h-24v18h24v-18zm-2 16l-6.526-6.618-3.445 3.483-3.418-3.525-6.611 6.66 5.051-8-5.051-6 10.029 7.446 9.971-7.446-4.998 6.01 4.998 7.99z" />
+                </svg>
+              </div>
+            </div>
+            <span>Mail</span>
+          </button>
+        </p>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom ">
+        <img src="img/contact/divyansh.jpeg" alt="Divyansh Srivastava" class="pointer-action">
+        <h3>Divyansh Srivastava</h3>
+        <p class="w3-opacity">Developer</p>
+        <p>U.G. Student<br>&nbsp;</p>
+
+        <p><button class="contactbtn" onclick="location.href='https:/www.linkedin.com/in/divyansh-srivastava-104aa720a/'
+                    ">
+            <div class="svg-wrapper-1">
+              <div class="svg-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </div>
+            </div>
+            <span class="disnone">LinkedIn</span>
+          </button>
+          <button class="contactbtn" onclick="groupmail();">
+            <div class="svg-wrapper-1">
+              <div class="svg-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path
+                    d="M22 5v14h-20v-14h20zm2-2h-24v18h24v-18zm-2 16l-6.526-6.618-3.445 3.483-3.418-3.525-6.611 6.66 5.051-8-5.051-6 10.029 7.446 9.971-7.446-4.998 6.01 4.998 7.99z" />
+                </svg>
+              </div>
+            </div>
+            <span>Mail</span>
+          </button>
+
+        </p>
+      </div>
+
+    </div>
+
+
+
+    <!-- End page content -->
+  </div>
+
+
+
+  <!-- testing modals -->
+
+  <!-- Button trigger modal
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+    </button> -->
+
+
+
+
+  <!-- Feedback Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Feedback</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSczO-48mmXiLP61Lm74PQF5sFEJEw1smLUUmfOKlDfAaXJLGQ/viewform?embedded=true"
+            width="100%" height="400vh" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Card Modal -->
+  <div class="modal fade" id="cardmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <iframe id="test1" src="" width="100%" height="400vh" frameborder="0" marginheight="0"
+            marginwidth="0">Loading…</iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Intro video Modal -->
+  <div class="modal fade" id="introvideo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">How it works ?</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/RiTAGyi1P0M"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+  
+  <footer class="text-center text-lg-start bg-light text-muted" style=" padding: 20px;" >
+  
+
+
+    
+
+
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block ">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+  
+  
+  
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin fontxlarge contactlogobtn"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f fontxlarge contactlogobtn"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter fontxlarge contactlogobtn"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google fontxlarge contactlogobtn"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-github fontxlarge contactlogobtn"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram fontxlarge contactlogobtn"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+  
+  
+
+      
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h5 class="fw-bold mb-4">
+             <i class="fas fa-envelope-open-text me-3"></i>GreetAi
+            </h5>
+            <p>
+              An Easy and Appealing way to wish your loved one's
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              company
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Privacy Policy</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Whats New</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Teammates</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">FAQs</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Cards Category
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Birthday cards</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Diwali Cards</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">New Year Cards</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Casual Cards</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Contact
+            </h6>
+            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+
+
+
+   
+  </footer>
+  <!-- Footer end -->
+ <!-- Copyright -->
+ <div class="w3-center w3-black w3-padding-16">
+  <p>© Copyright 2021. All Rights Reserved.</p>
+</div>
+<!-- Copyright -->
+
+</body>
+
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreetAI</title>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+
+
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+
+    <!-- w3.css -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- link favicon -->
+    <link rel="shortcut icon" href="img/fav/logo.png" type="png">
+
+
+
+    <!-- link tex animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <style>
+        /* It makes all img elements non-reactive to any mouse events such as dragging, hovering, clicking etc. */
+        .pointer-action {
+            pointer-events: none;
+            width: 95%;
+        }
+    </style>
+
+
+
+
+    <script src="js/main.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+    <!-- bootstrap headers -->
+
+    <header>
+        <!-- Navbar -->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+
+
+            <a class="navbar-brand" onclick="location.reload();">Greet.AI</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <!-- home -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="http://greetai.epizy.com/">Home <span class="sr-only"></span></a>
+                    </li>
+
+                    <!-- dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://greetai.epizy.com" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Cards
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item " href="http://greetai.epizy.com/#bdaycards">Birthday Cards</a>
+                            <a class="dropdown-item" href="http://greetai.epizy.com/#bdaycards" type="button">Diwali Cards</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://greetai.epizy.com/#bdaycards">Christmas Cards (Upcoming)</a>
+                        </div>
+                    </li>
+
+                    <!-- temamates -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://greetai.epizy.com/#about">Teammates</a>
+                    </li>
+
+                    <!-- feedback form -->
+                    <li class="nav-item">
+                        <a type="button" class="nav-link" data-toggle="modal" data-target="#exampleModal">
+                            Feedback
+                        </a>
+                    </li>
+
+                    <!-- tutorial video -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#introvideo">How to use ?</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+
+
+        <!-- Background image -->
+        <div class="p-5 text-center bg-image" style="
+        background-image: url('img/bgheader.jpg');
+        height: 400px; opacity: 0.9;
+      ">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-white">
+                        <h1 class="mb-3 animate__animated animate__bounceIn">Greet.AI</h1>
+                        <h4 class="mb-3 animate__animated animate__bounceIn">An Easy and Appealing way to wish your
+                            loved once.</h4>
+                        <a class="btn btn-outline-light btn-lg" href="#" role="button" data-toggle="modal"
+                            data-target="#introvideo">Take a tour</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Background image -->
+    </header>
+
+    <div class="w3-content w3-padding">
+
+
+    <h3 style="margin-top: 2em;">Our Recent Blog Post</h3>
+    <!-- Start BawkBox Code-->
+    
+    <script data-sil-id="619d066fcba95c001e04c557">var loadWidget = function() { var d = document, w = window, l = window.location,p = l.protocol == "file:" ? "http://" : "//"; if (!w.WS) w.WS = {}; c = w.WS; var m=function(t, o){ var e = d.getElementsByTagName("script"); e=e[e.length-1]; var n = d.createElement(t); if (t=="script") {n.async=true;} for (k in o) n[k] = o[k]; e.parentNode.insertBefore(n, e)}; m("script", { src: p + "bawkbox.com/widget/blog/619d066fcba95c001e04c557?page=" +encodeURIComponent(l+''), type: 'text/javascript' }); c.load_net = m; }; if(window.Squarespace){ document.addEventListener('DOMContentLoaded', loadWidget); setTimeOut(function(){ document.addEventListener('DOMContentLoaded', loadWidget); }, 3000) } else { loadWidget() } </script>
+    
+    
+    <div class="sil-widget-blog sil-widget" id="sil-widget-619d066fcba95c001e04c557">
+        <!-- <a
+            href="//bawkbox.com/install/blog">wqwer</a>
+         -->
+        </div>
+    <!-- End BawkBox Code-->
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- testing modals -->
+
+    <!-- Button trigger modal
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+    </button> -->
+
+
+
+    <!-- Feedback Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Feedback</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSczO-48mmXiLP61Lm74PQF5sFEJEw1smLUUmfOKlDfAaXJLGQ/viewform?embedded=true"
+                        width="100%" height="400vh" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Intro video Modal -->
+    <div class="modal fade" id="introvideo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">How it works ?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/RiTAGyi1P0M"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer 
+    <footer class="w3-center w3-black w3-padding-16">
+        <p>© Copyright 2021. All Rights Reserved.</p>
+    </footer> -->
+
+
+</body>
+
+</html>
